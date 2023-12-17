@@ -3,7 +3,7 @@ import SectionTitle from "../../Shared/SectionTitle/SectionTitle";
 
 const Skills = () => {
     return (
-        <div>
+        <section id="skill">
             <SectionTitle heading={"My Skills"}></SectionTitle>
             <div>
                 <div className="mb-8">
@@ -36,7 +36,7 @@ const Skills = () => {
 
             </div>
 
-        </div>
+        </section>
     );
 };
 
