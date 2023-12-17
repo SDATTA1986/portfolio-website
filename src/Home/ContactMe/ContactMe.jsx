@@ -3,6 +3,7 @@ import emailjs from '@emailjs/browser';
 import { useRef } from 'react';
 import SectionTitle from '../../Shared/SectionTitle/SectionTitle';
 import Swal from 'sweetalert2';
+import GoogleMap from '../GoogleMap/GoogleMap';
 const ContactMe = () => {
     const form = useRef();
 
@@ -34,11 +35,13 @@ const ContactMe = () => {
             
             <div className="hero min-h-screen bg-green-200">
                 <div className="hero-content flex-col lg:flex-row">
-                    <div className="text-center lg:text-left w-1/2">
-                        <h1 className="text-5xl font-bold">GET IN TOUCH</h1>
-                        <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                    <div className="">
+                        {/* <h1 className="text-5xl font-bold">GET IN TOUCH</h1>
+                        <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p> */}
+                        <GoogleMap></GoogleMap>
                     </div>
                     <div className="card shrink-0 w-1/2 shadow-2xl bg-base-100">
+                    <h1 className="text-5xl text-center font-bold">GET IN TOUCH</h1>
                         <form ref={form} className="card-body" onSubmit={sendEmail}>
                             <div className="form-control">
                                 <label className="label">
