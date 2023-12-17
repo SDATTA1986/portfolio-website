@@ -2,7 +2,7 @@ import { FaCalendar, FaCertificate, FaDownload } from "react-icons/fa6";
 import SectionTitle from "../../Shared/SectionTitle/SectionTitle";
 import img from '../../assets/Self Image.jpeg'
 import { HiBuildingOffice2 } from "react-icons/hi2";
-import ExamplePdf from '../../assets/1.pdf'
+import ExamplePdf from '../../assets/Resume_SOURAV DATTA.pdf'
 
 const AboutMe = () => {
     return (
@@ -70,7 +70,7 @@ const AboutMe = () => {
                             </div>
 
                         </div> */}
-                        <a href={ExamplePdf} download="Example-PDF-document" target="_blank" rel="noreferrer" className="btn bg-green-200">Download Resume<FaDownload /></a>
+                        <a href={ExamplePdf} download="Resume_SOURAV DATTA" target="_blank" rel="noreferrer" className="btn bg-green-200">Download Resume<FaDownload /></a>
                     </div>
 
                 </div>

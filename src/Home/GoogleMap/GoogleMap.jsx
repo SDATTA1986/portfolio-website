@@ -5,8 +5,8 @@ const AnyReactComponent = ({ text }) => <div style={{color:'red'}}><FaMapMarkerA
 const GoogleMap = () => {
     const defaultProps = {
         center: {
-            lat: 23.8041,
-            lng: 90.4152
+            lat: 22.5726,
+            lng: 88.3639
         },
         zoom: 12
     };
