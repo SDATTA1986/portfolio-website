@@ -31,17 +31,21 @@ const ContactMe = () => {
     };
     return (
         <section id="contact">
-            <SectionTitle heading={"Contact Me"}></SectionTitle>
+            {/* <SectionTitle heading={"Contact Me"}></SectionTitle> */}
+
+            <div className="hero mx-auto  text-center my-12">
+                <h3 className="text-3xl uppercase mx-auto w-1/3 border-y-4 py-4 z-[0]">Contact Me</h3>
+            </div>
             
-            <div className="hero min-h-screen bg-green-200">
-                <div className="hero-content flex-col lg:flex-row">
-                    <div className="">
+            <div className="hero min-h-screen ">
+                <div className="hero-content flex-col lg:flex-row gap-4 justify-between mr-10">
+                    <div >
                         {/* <h1 className="text-5xl font-bold">GET IN TOUCH</h1>
                         <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p> */}
                         <GoogleMap></GoogleMap>
                     </div>
-                    <div className="card shrink-0 w-1/2 shadow-2xl bg-base-100">
-                    <h1 className="text-5xl text-center font-bold">GET IN TOUCH</h1>
+                    <div className="card shrink-0 sm:w-[350px] md:w-1/2 shadow-2xl bg-base-100">
+                    <h1 className="text-black text-4xl text-center font-bold">GET IN TOUCH</h1>
                         <form ref={form} className="card-body" onSubmit={sendEmail}>
                             <div className="form-control">
                                 <label className="label">
@@ -62,7 +66,7 @@ const ContactMe = () => {
                                 <textarea name="message" type="text"  placeholder="Your Message" className=" textarea textarea-bordered" required />
                             </div>
                             <div className="form-control mt-6">
-                                <input type="submit" value="submit" className="btn bg-green-500"/>
+                                <input type="submit" value="Send Message" className="btn btn-active btn-ghost text-black"/>
                             </div>
                         </form>
                     </div>
