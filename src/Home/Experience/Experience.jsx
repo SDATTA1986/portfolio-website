@@ -13,7 +13,7 @@ const Experience = () => {
                 <div className="card w-full text-black bg-white ">
                     <div className="card-body">
                         <h2 className="card-title">Telecom Enginner</h2>
-                        <p>I worked as telecom engineer for 13 years  </p>
+                        <p>I worked as telecom engineer for 14 years  </p>
 
                     </div>
                 </div>

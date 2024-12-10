@@ -8,9 +8,9 @@ const NavBar = () => {
             <li className='font-bold text-2xl'><a href="/">Home</a></li>
             <li className='font-bold text-2xl'><a href='#about'>About Me</a></li>
             <li className='font-bold text-2xl'><a href='#skill'>Skills</a></li>
-            <li className='font-bold text-2xl'><a href='#education'>Education</a></li>
+            <li className='font-bold text-2xl'><a href='#projects'>Projects</a></li>
             <li className='font-bold text-2xl'><a href='#experience'>Experiences</a></li>
-            <li className='font-bold text-2xl'><a>Projects</a></li>
+            <li className='font-bold text-2xl' href="achievement"><a>Achievements</a></li>
             <li className='font-bold text-2xl'><a href='#contact'>Contact Me</a></li>
         </ul>
 

@@ -58,6 +58,9 @@ import Footer from "./Footer/Footer";
 import Lottie from 'react-lottie';
 import AnimationData from "../../public/LoadingAnimation3.json";
 import BackgroundParticles from "./BackgroundParticles/BackgroundParticles";
+import Projects from "./Projects/Projects";
+import LiveChat from "./LiveChat/LiveChat";
+import Achievement from "./Achievement/Achievement";
 
 
 const Home = () => {
@@ -144,9 +147,12 @@ const Home = () => {
                     <AboutMe />
                     <Skills />
                     <Experience />
-                    <Education />
+                    {/* <Education /> */}
+                    <Projects></Projects>
+                    {/* <Achievement></Achievement> */}
                     <ContactMe />
                     <Footer  />
+                    <LiveChat></LiveChat>
                    
                 </>
             )}

@@ -14,7 +14,7 @@ const Banner = () => {
 
 
             <div className="hero min-h-screen ">
-                <div className="hero-content flex-col-reverse lg:flex-row-reverse gap-[150px]">
+                <div className="hero-content flex-col-reverse md:flex-row-reverse gap-[150px]">
                     <img src={img} className="rounded-full shadow-2xl bg-white lg:h-[500px] lg:w-[500px] w-[400px] h-[400px] border-8 border-white" />
 
 
