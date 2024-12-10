@@ -146,7 +146,7 @@ const Home = () => {
 
                     <AboutMe />
                     <Skills />
-                    <Experience />
+                    {/* <Experience /> */}
                     {/* <Education /> */}
                     <Projects></Projects>
                     {/* <Achievement></Achievement> */}

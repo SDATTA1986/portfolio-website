@@ -146,6 +146,20 @@ const AboutMe = () => {
         return () => clearInterval(timer);
     }, [countExperience]);
 
+    // const VisitorCounter = () => {
+        const [visits, setVisits] = useState(0);
+    
+        useEffect(() => {
+            const storedVisits = localStorage.getItem("visits");
+            if (storedVisits) {
+                setVisits(Number(storedVisits) + 1);
+            } else {
+                setVisits(1);
+            }
+            localStorage.setItem("visits", visits + 1);
+        }, [visits]);
+    // }
+
     return (
         <section id="about">
             <div className="hero mx-auto  text-center my-12">
@@ -236,9 +250,10 @@ const AboutMe = () => {
                             </div>
                             <div>
                             <MdOutlinePageview className="text-xl inline-block mb-2 text-green-500"></MdOutlinePageview>
-                                <h1 className="text-6xl">{pageView}<small>+</small></h1>
+                                {/* <h1 className="text-6xl">{pageView}<small>+</small></h1> */}
+                                <h1 className="text-6xl">{visits}<small>+</small></h1>
                                 <p>
-                                   Page Views
+                                   Page Visitors
                                 </p>
                             </div>
                             <div>
